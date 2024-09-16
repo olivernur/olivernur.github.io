@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
   <title>Projekt</title>
+  <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header right'
+    'menu menu main main main right'
+    'menu menu footer footer footer right';
+  gap: 10px;
+  background-color: #f3d721;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 <body> 
-  <h1>HI</h1>
-  <img src="https://www.google.com/imgres?q=hello&imgurl=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20210704%2Foriginal%2Fpngtree-simple-hello-text-handwriting-png-image_6502816.jpg&imgrefurl=https%3A%2F%2Fpngtree.com%2Fso%2Fhello-text&docid=ctgtiwINrh7yQM&tbnid=9J1917ASe2BDOM&vet=12ahUKEwjmkNPr5sWIAxWTExAIHarqIYkQM3oECGUQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwjmkNPr5sWIAxWTExAIHarqIYkQM3oECGUQAA" alt="Hello!"/>
+<h1>Grid</h1>
+<div class="grid-container">
+  <header class="item1">Header</header>
+  <nav class="item2">Menu</nav>
+  <main class="item3">Main</main>  
+  <aside class="item4">Right</aside>
+  <footer class="item5">Footer</footer>
+</div>
   </body>
 </html>
