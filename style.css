@@ -1,23 +1,16 @@
-.profile {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  body {
+  background-color: lightblue;
 }
 
-.profile-picture {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: gray;
-  margin-right: 10px;
+h1 {
+  color: white;
+  text-align: center;
 }
 
-.username {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 14px; /* adjust the font size as needed */
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
 }
 @media only screen and (max-width : 320px)
 {
